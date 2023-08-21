@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-4xl mt-4 text-center text-blue-800">money master</h1>
+    </header>
+   <main>
+    <section class="container lg:flex md:flex grid">
+
+        <div class="money-img">
+            <img class="img" src="./image/money-img.png" alt="">
+        </div>
+
+        <div class="money-container lg:h-[100vh] md:h-[170vh] h-[180vh]">
+            <div class="money-account">
+                <h2 class="font-bold text-2xl">Income </h2>
+                <div class="income">
+                    <h4>Income: </h4>
+                    <input id="income" type="text">
+                </div>
+                <div class="">
+                    <h2 class="font-bold text-xl">Expenses</h2>
+                    <div class="food">
+                        <h4>Food:</h4>
+                        <input id="food" type="text">
+                    </div>
+                    <div class="rent">
+                        <h4>Rent:</h4>
+                        <input id="rent" type="text">                        
+                    </div>
+                    <div class="other">
+                        <h4>Other:</h4>
+                        <input id="other" type="text">
+                    </div>
+                    <button class="cal-btn" id="calculate">Calculate</button>
+                </div>                
+            </div>
+
+            <div>
+                <h3>Total Expenses: <span id="total-exp">00.00</span></h3> <br>
+                <h3>Balance: <span id="balance">00.00</span></h3>
+            </div>
+            <div class="save">
+                <h4>Save: </h4>
+                <input type="text" id="saving"> % 
+                <button class="save-btn" id="saving-btn">Save</button>
+            </div>
+
+            <div>
+                <h3>Saving Amount: <span id="saving-amount">00.00</span></h3> <br>
+                <h3>Remaining Balance: <span id="remaining-balance">00.00</span></h3>
+            </div>
+            <button class="save-btn" onclick="my_modal_1.showModal()">finished</button>
+            <!-- modal open  -->
+            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box ">
+                  <!-- modal show -->
+                  <div class="card bg-base-100 rounded-lg">
+                    <figure class="">
+                      <img src="https://media.istockphoto.com/id/1388918937/photo/easter-eggs-basket-closed.webp?b=1&s=170667a&w=0&k=20&c=er9CnNkEgCAaX1t4XLMIYqxx5ckH2ErYeaPzVH2ATKw=" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold text-2xl">Congratulations!</h2>                    
+                      <p>Finised you'r calculation.</p>
+                      <div class="card-actions">                                        
+                      </div>                                     
+                    </div>
+                  </div>
+                  <div class="modal-action flex justify-center">                                                            
+                    <button id="go-home" class="btn bg-blue-600 btn-outline text-white ">Go Home</button>                                    
+                  </div>
+                </form>
+              </dialog>
+             <!-- modal End -->
+        </div>
+    </section>
+   </main>
+    
+   <script src="app.js"></script>
+</body>
+</html>

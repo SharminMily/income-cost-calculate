@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* font-family: 'orbitron', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+
+}
+section{       
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+   
+}
+.money-img{
+    margin: 5%;
+    
+}
+.img{
+    width: 220vh;
+    height: 100vh;
+}
+.money-container {
+    margin: 5%;
+    width: 80%;
+    height: 99vh;  
+   background-color: #f5f4f4;
+   text-align: center;    
+}
+.money-account{
+    margin: 10px;
+}
+input{
+    width: 30vh;
+    height: 35px;
+    text-decoration: none;
+    border: none;
+    background: #DCDCDC;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 5px;   
+}
+
+.income, .food, .rent, .other{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;    
+    gap: 25px;
+    
+} 
+.cal-btn, .save-btn{
+    width: 25%;
+    height: 35px;
+    margin: 1px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(28, 85, 160);
+   color: #ffffff;
+}
+.save{
+    margin: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;    
+    gap: 10px   
+    
+}
+#finished{
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
