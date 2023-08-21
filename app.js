@@ -66,10 +66,10 @@ document.getElementById('go-home').addEventListener('click', function(){
     savingField.value= '';
 
     const totalExp =  document.getElementById('total-exp')
-    totalExp.innerText = 0;
+    totalExp.innerText = "00";
 
     const balance =  document.getElementById('balance')
-    balance.innerText = 0;
+    balance.innerText = "00";
 
     const savingAmount = document.getElementById('saving-amount');
     savingAmount.innerText = 0;
